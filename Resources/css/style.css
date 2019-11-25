@@ -3,26 +3,37 @@ html{
 }
 
 header{
+    height: 64px;
     border-bottom: 1px solid black;
+}
+
+header p{
+    font-size: 32px;
+    height: 45px;
+}
+
+header img, .row{
     height: 64px;
 }
 
 header div{
-    display: inline-block;
-    vertical-align: middle;
+    padding-top: 3px;
+    margin: 0 24px !important;
+    height: 64px;
 }
 
-header img{
-    vertical-align: middle;
-    margin-left: 24px;
-}
-
-.nav{
+nav {
+    display: flex;
+    justify-content: flex-end;
     padding-top: 1rem;
-    padding-right: 24px;
-    float: right;
 }
 
-.nav a{
-    padding: 16px;
+a {
+    margin: 0;
+    padding: 0 16px;
+    color: inherit !important;
+}
+
+a:hover{
+    text-decoration: none !important;
 }
