@@ -4,7 +4,6 @@ html{
 
 header{
     height: 64px;
-    border-bottom: 1px solid black;
 }
 
 header p{
@@ -22,16 +21,23 @@ header div{
     height: 64px;
 }
 
+div{
+    margin: 0 !important;
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
     padding-top: 1rem;
 }
 
+nav a{
+    color: inherit !important;
+    padding: 0 16px;
+}
+
 a {
     margin: 0;
-    padding: 0 16px;
-    color: inherit !important;
 }
 
 a:hover{
@@ -46,7 +52,7 @@ section{
     color: rgb(53, 53, 53);
 }
 
-section img{
+section .large{
     width: 90%;
     padding: 32px 24px;
 }
@@ -64,16 +70,29 @@ button{
 }
 
 .center{
-    margin: auto;
+    margin: auto !important;
 }
 
-.learnSomething h2{
+.learn-something h2, .keep-practicing h2, .start-learning h2{
     font-weight: bold;
     font-size: 3rem;
-    padding: 10px 0;
+    padding: 32px 0;
 }
 
-.learnSomething h5{
+.learn-something h5{
     font-size: 1.5rem;
     padding-bottom: 20px;
+}
+
+.keep-practicing a{
+    font-size: 1rem;   
+}
+
+.small{
+    padding: 16px 15px 16px 15px;
+}
+
+.border-class{
+    border-bottom: 1px solid rgb(200, 200, 200);
+    border-left:  1px solid rgb(200, 200, 200);;
 }
