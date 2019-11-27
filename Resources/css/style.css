@@ -109,3 +109,8 @@ footer{
 footer div{
     padding: 16px;
 }
+
+video{
+    width: 100%;
+    padding: 0 25px 25px 25px;
+}
