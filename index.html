@@ -5,7 +5,9 @@
     <title>Colmar Academy</title>
     <link rel="stylesheet" href="Resources/css/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!--<script src="Resources/script.js"></script>-->
 </head>
 
 <body>
@@ -97,8 +99,8 @@
         </div>
     </section>
 
-    <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
     <div class="col-sm-12 m--space-30">&nbsp;</div>
+    <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
 
     <section class="bg-grey start-learning bg-mobile">
         <div class="row">
@@ -106,7 +108,16 @@
         </div>
         <div class="row">
             <div class="col-sm-3 ml-auto">
-                <div class="card">
+                <!--Software Engineering Start-->
+                <button onclick="myFunction('panel1')" class="w3-btn w3-block w3-black w3-left-align desktop" style="background-color: rgb(230, 230, 230) !important; color: black !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Software Engineering</button>
+                <div id="panel1" class="w3-container w3-hide card">
+                    <img src="Resources/images/course-software.jpg" alt="Software engineering" class="card-img-top">
+                    <h4 class="card-title my-2">Software Engineering</h4>
+                    <p class="card-subtitle my-2">COURSES</p>
+                    <p class="card-text">Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+
+                <div class="card mobile">
                     <img src="Resources/images/course-software.jpg" alt="Software engineering" class="card-img-top">
                     <div class="card-body text-center">
                         <h4 class="card-title my-2">Software Engineering</h4>
@@ -114,10 +125,20 @@
                         <p class="card-text">Web Development, Mobile Development, iOT, APIs</p>
                     </div>
                 </div>
+                <!--Software Engineering End-->
 
-                <div class="col-sm-12 m--space-30">&nbsp;</div>
+                <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
+                
+                <!--Data Start-->
+                <button onclick="myFunction('panel2')" class="w3-btn w3-block w3-black w3-left-align desktop" style="background-color: rgb(230, 230, 230) !important; color: black !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Data</button>
+                <div id="panel2" class="w3-container w3-hide card">
+                    <img src="Resources/images/course-data.jpg" alt="Data" class="card-img-top">
+                    <h4 class="card-title my-2">Data</h4>
+                    <p class="card-subtitle my-2">COURSES</p>
+                    <p class="card-text">Data Science, Big Data, SQL, Data Visualisation</p>
+                </div>
 
-                <div class="card">
+                <div class="card mobile">
                     <img src="Resources/images/course-data.jpg" alt="Data" class="card-img-top">
                     <div class="card-body text-center">
                         <h4 class="card-title my-2">Data</h4>
@@ -125,9 +146,20 @@
                         <p class="card-text">Data Science, Big Data, SQL, Data Visualisation</p>
                     </div>
                 </div>
+                <!--Data End-->
             </div>
+
             <div class="col-sm-3">
-                <div class="card">
+                <!--Computer Art Start-->
+                <button onclick="myFunction('panel3')" class="w3-btn w3-block w3-black w3-left-align desktop" style="background-color: rgb(230, 230, 230) !important; color: black !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Computer Art</button>
+                <div id="panel3" class="w3-container w3-hide card">
+                    <img src="Resources/images/course-computer-art.jpg" alt="Computer art" class="card-img-top">
+                    <h4 class="card-title my-2">Computer Art</h4>
+                        <p class="card-subtitle my-2">COURSES</p>
+                        <p class="card-text">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                </div>
+
+                <div class="card mobile">
                     <img src="Resources/images/course-computer-art.jpg" alt="Computer art" class="card-img-top">
                     <div class="card-body text-center">
                         <h4 class="card-title my-2">Computer Art</h4>
@@ -135,10 +167,20 @@
                         <p class="card-text">Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
                     </div>
                 </div>
+                <!--Computer Art End-->
 
-                <div class="col-sm-12 m--space-30">&nbsp;</div>
+                <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
 
-                <div class="card">
+                <!--Business Start-->
+                <button onclick="myFunction('panel4')" class="w3-btn w3-block w3-black w3-left-align desktop" style="background-color: rgb(230, 230, 230) !important; color: black !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Business</button>
+                <div id="panel4" class="w3-container w3-hide card">
+                    <img src="Resources/images/course-business.jpg" alt="Business" class="card-img-top">
+                    <h4 class="card-title my-2">Business</h4>
+                    <p class="card-subtitle my-2">COURSES</p>
+                    <p class="card-text">Product Development, Business Development, Startup</p>
+                </div>
+
+                <div class="card mobile">
                     <img src="Resources/images/course-business.jpg" alt="Business" class="card-img-top">
                     <div class="card-body text-center">
                         <h4 class="card-title my-2">Business</h4>
@@ -146,9 +188,20 @@
                         <p class="card-text">Product Development, Business Development, Startup</p>
                     </div>
                 </div>
+                <!--Business End-->
             </div>
+
             <div class="col-sm-3 mr-auto">
-                <div class="card">
+                <!--Design Start-->
+                <button onclick="myFunction('panel5')" class="w3-btn w3-block w3-black w3-left-align desktop" style="background-color: rgb(230, 230, 230) !important; color: black !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Design</button>
+                <div id="panel5" class="w3-container w3-hide card">
+                    <img src="Resources/images/course-design.jpg" alt="Design" class="card-img-top">
+                    <h4 class="card-title my-2">Design</h4>
+                        <p class="card-subtitle my-2">COURSES</p>
+                        <p class="card-text">User Experience Design, User Research, Visual Design</p>
+                </div>
+
+                <div class="card mobile">
                     <img src="Resources/images/course-design.jpg" alt="Design" class="card-img-top">
                     <div class="card-body text-center">
                         <h4 class="card-title my-2">Design</h4>
@@ -156,10 +209,20 @@
                         <p class="card-text">User Experience Design, User Research, Visual Design</p>
                     </div>
                 </div>
+                <!--Design End-->
 
-                <div class="col-sm-12 m--space-30">&nbsp;</div>
+                <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
 
-                <div class="card">
+                <!--Marketing Start-->
+                <button onclick="myFunction('panel6')" class="w3-btn w3-block w3-black w3-left-align desktop" style="background-color: rgb(230, 230, 230) !important; color: black !important; font-family: Arial, Helvetica, sans-serif; font-size: 16px;">Marketing</button>
+                <div id="panel6" class="w3-container w3-hide card">
+                    <img src="Resources/images/course-marketing.jpg" alt="Marketing" class="card-img-top">
+                    <h4 class="card-title my-2">Marketing</h4>
+                    <p class="card-subtitle my-2">COURSES</p>
+                    <p class="card-text">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+
+                <div class="card mobile">
                     <img src="Resources/images/course-marketing.jpg" alt="Marketing" class="card-img-top">
                     <div class="card-body text-center">
                         <h4 class="card-title my-2">Marketing</h4>
@@ -167,10 +230,11 @@
                         <p class="card-text">Analytics, Content Marketing, Mobile Marketing</p>
                     </div>
                 </div>
+                <!--Marketing End-->
             </div>
         </div>
-        <div class="col-sm-12 m--space-30">&nbsp;</div>
-        <div class="col-sm-12 m--space-30">&nbsp;</div>
+        <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
+        <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
     </section>
 
     <section class="thesis-exhibit">
@@ -180,10 +244,10 @@
         <div class="row">
             <div class="col-sm-7">
                 <video src="Resources/videos/thesis.mp4" type="video/mp4" autoplay loop muted></video>
-                <h2 style="padding-left: 24px; width: 85%;">Reimagine urban</h2>
-                <h5 style="padding-left: 24px; width: 85%;">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h5>
+                <h2 class="mobile" style="padding-left: 24px; width: 85%;">Reimagine urban</h2>
+                <h5 class="mobile" style="padding-left: 24px; width: 85%;">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h5 class="mobile">
             </div>
-            <div class="col-sm-5">
+            <div class="col-sm-5 mobile">
                 <div class="col-sm-12">
                     <div class="row small border-top border-right border-left bg-grey bg-mobile">
                         <div class="col-sm-6">
@@ -208,15 +272,15 @@
         </div>
     </section>
 
-    <div class="col-sm-12 m--space-30">&nbsp;</div>
-    <div class="col-sm-12 m--space-30">&nbsp;</div>
+    <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
+    <div class="col-sm-12 m--space-30 mobile">&nbsp;</div>
 
     <footer>
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6" style="margin: 16px !important; font-size: 14px">
                 <p>© 2016 Colmar Academy. All rights reserved.</p>
             </div>
-            <div class="col-sm-6">
+            <div class="col-sm-6 mobile">
                 <nav class="float-right">
                     <a href="#">Terms</a>
                     <a href="#">Privacy</a>
@@ -225,6 +289,17 @@
 
         </div>
     </footer>
+
+    <script>
+        function myFunction(id) {
+          var x = document.getElementById(id);
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+    </script>
 </body>
 
 </html>
